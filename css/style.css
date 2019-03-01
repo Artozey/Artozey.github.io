@@ -1,0 +1,177 @@
+@font-face {
+	font-family: "MuseoSansCyrl";
+	src:  url("../fonts/MuseoSansCyrl.eot");
+	src: url("../fonts/MuseoSansCyrl.eot?#iefix") format("embedded-opentype"),
+			 url("../fonts/MuseoSansCyrl.woff") format("woff"),
+			 url("../fonts/MuseoSansCyrl.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Bellico";
+	src:  url("../fonts/Bellico.otf");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "HelveticaLight";
+	src:  url("../fonts/HelveticaLight.eot");
+	src: url("../fonts/HelveticaLight.eot?#iefix") format("embedded-opentype"),
+			 url("../fonts/HelveticaLight.woff") format("woff"),
+			 url("../fonts/HelveticaLight.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "HelveticaRegular";
+	src: url("../fonts/HelveticaRegular.eot");
+	src: url("../fonts/HelveticaRegular.eot?#iefix") format("embedded-opentype"),
+			 url("../fonts/HelveticaRegular.woff") format("woff"),
+			 url("../fonts/HelveticaRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+/*https://codepen.io/elemental-shift/pen/fxIEa */
+
+/*https://codepen.io/kkrueger/pen/qfoLa*/
+
+body {
+    background: #fff;
+}
+
+.wrapper > .container {
+    background: #000;
+    height: 1000px;
+}
+/*** header (начало)***/
+.headerContainer{
+    height: 100%;
+}
+canvas {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    width: 100%;
+}
+
+.containerMenu {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-item {
+    position: relative;
+    cursor: pointer;
+}
+
+.wee {
+    height: 2px;
+    width: 100%;
+    background-color: rgb(255,0,120);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.75s;
+}
+.containerMenu a {
+    margin: 0;
+    padding: 10px 50px;
+    font-size: 1rem;
+    color: #434343;
+    transition: 0.75s;
+    font-family: MuseoSansCyrl;
+    font-size: 18px;
+    display: inline-block;
+}
+.containerMenu a:hover {
+    color: #E10078;
+    text-decoration: none;
+}
+.containerLogo {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    margin: 202px 0;
+    justify-content: center;
+    align-items: center;
+}
+.containerLogo > div {
+    position: relative;
+    z-index: 2;
+    -webkit-box-shadow: 0px 0px 90px 50px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 90px 50px rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 90px 50px rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 0.95);
+}
+.containerLogo > div > img{
+    margin: 0 10px;
+}
+/*** header (конец)***/
+/*** Блок "Продукция" (начало)***/
+.blockProduct{
+    margin: 50px 0;
+}
+.blueLineHorizontal{
+    width: 80%;
+    height: 36px;
+    background: #95e0da;
+    float: right;
+    position: relative;
+    z-index: 1;
+}
+.blueLineVert{
+    width: 26px;
+    height: 150px;
+    top: -30px;
+    left: 90%;
+    background: #aedac9;
+    position: relative;
+    z-index: 2;
+}
+.nr{
+    font-family: Bellico;
+    font-size: 112px;
+    transform: rotate(90deg);
+    position: relative;
+    top: -13px;
+    float: left;
+    color: rgba(108,108,108,0.5);
+}
+.selectNameBlock{
+    text-transform: uppercase;
+}
+.nameBlock{
+    font-family: MuseoSansCyrl;
+    font-size: 67px;
+    text-transform: uppercase;
+    color: #093b6a;
+    float: right;
+    position: relative;
+    /*left: -10%;*/
+}
+.selectNameBlock{
+    float: right;
+    transform: rotate(90deg);
+    position: relative;
+    font-family: MuseoSansCyrl;
+    right: 10%;
+    top: 106px;
+    font-size: 116px;
+    color: rgba(9,59,106,0.2)
+}
+.containerItemProd{
+    width: 100%;
+    float: left;
+    background: #ccc;
+}
+.itemProduct{
+    width: 33.3333%;
+    float: left;
+}
+/*** Блок "Продукция" (конец)***/
